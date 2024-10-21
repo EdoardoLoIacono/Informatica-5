@@ -1,0 +1,39 @@
+Database: Biblioteca
+Tabelle:
+Libri
+
+id INT PRIMARY KEY AUTO_INCREMENT
+titolo VARCHAR(255)
+autore VARCHAR(255)
+anno_pubblicazione INT
+genere VARCHAR(100)
+Utenti
+
+id INT PRIMARY KEY AUTO_INCREMENT
+nome VARCHAR(255)
+cognome VARCHAR(255)
+email VARCHAR(255)
+data_iscrizione DATE
+Prestiti
+
+id INT PRIMARY KEY AUTO_INCREMENT
+libro_id INT
+utente_id INT
+data_prestito DATE
+data_restituzione DATE
+Esercizio
+Creazione delle tabelle: Scrivi le query per creare le tre tabelle sopra.
+
+Inserimento dati: Inserisci almeno 5 record in ciascuna tabella.
+
+Aggiunta di una colonna: Usa il comando ALTER TABLE per aggiungere una colonna numero_pagine alla tabella Libri.
+
+Modifica di una colonna: Usa il comando ALTER TABLE per cambiare il tipo della colonna data_iscrizione nella tabella Utenti da DATE a DATETIME.
+
+Rimozione di una colonna: Usa il comando ALTER TABLE per rimuovere la colonna genere dalla tabella Libri.
+
+Query di selezione: Scrivi una query per selezionare tutti i libri pubblicati dopo il 2000.
+
+Query di join: Scrivi una query che mostri i nomi e i cognomi degli utenti insieme ai titoli dei libri che hanno preso in prestito.
+
+Query di aggregazione: Scrivi una query per contare il numero totale di prestiti per ogni libro.
